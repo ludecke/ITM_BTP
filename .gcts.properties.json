@@ -1,0 +1,12 @@
+{
+  "name": "_ludecke_itm",
+  "version": "1.0.0",
+  "description": "/LUDECKE/ITM",
+  "repositoryLayout": {
+    "format": "json",
+    "formatVersion": "6",
+    "keepClient": "false",
+    "metaInformation": ".gctsmetadata/",
+    "tableContent": "true"
+  }
+}
