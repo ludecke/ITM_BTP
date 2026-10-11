@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "/LUDECKE/ITM",
   "repositoryLayout": {
+    "fingerprintSeckey": "/BYOG/FPRINT_RT/6A0A5A5630751FD1B1A9ECB0953F4CA9_0",
     "format": "json",
-    "formatVersion": "6",
+    "formatVersion": "11",
     "keepClient": "false",
     "metaInformation": ".gctsmetadata/",
     "tableContent": "true"
