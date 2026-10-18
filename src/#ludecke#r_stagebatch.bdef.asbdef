@@ -16,6 +16,7 @@ etag master LocalLastChangedAt
     {
       StageId            = stage_id;
       ProjectId          = project_id;
+      Description        = description;
       CreatedBy          = created_by;
       CreatedAt          = created_at;
       LocalLastChangedAt = local_last_changed_at;

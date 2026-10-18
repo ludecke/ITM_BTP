@@ -97,6 +97,15 @@ CLASS /ludecke/cl_itm_i18n IMPLEMENTATION.
     result-object_type      = ic_dtel.
     result-object_name      = object_name.
 
+    " package and software component - informational only, a failure must not break the read
+    TRY.
+        DATA(lo_package) = lo_ar->if_xco_ar_object~get_package( ).
+        result-package   = lo_package->name.
+        result-component = lo_package->read( )-property-software_component->name.
+      CATCH cx_root ##NO_HANDLER.
+        " leave package / component empty
+    ENDTRY.
+
     LOOP AT lo_src->texts INTO DATA(lo_src_text).
       DATA(lv_key) = lo_src_text->attribute->value.
 

@@ -28,6 +28,7 @@ CLASS ltc_stage DEFINITION FINAL FOR TESTING DURATION SHORT RISK LEVEL HARMLESS.
     METHODS build_split_object FOR TESTING.
     METHODS build_split_language FOR TESTING.
     METHODS build_upper_case FOR TESTING.
+    METHODS validate_description_too_long FOR TESTING.
 ENDCLASS.
 
 CLASS ltc_stage IMPLEMENTATION.
@@ -152,6 +153,13 @@ CLASS ltc_stage IMPLEMENTATION.
     cl_abap_unit_assert=>assert_equals( act = i_groups[ 1 ]-object_type exp = 'DTEL' ).
     cl_abap_unit_assert=>assert_equals( act = i_groups[ 1 ]-object_name exp = 'ZTEST' ).
 
+  ENDMETHOD.
+
+  METHOD validate_description_too_long.
+    cl_abap_unit_assert=>assert_equals(
+      act = io_cut->validate( lines       = VALUE #( ( line( ) ) )
+                              description = repeat( val = `X` occ = 81 ) )
+      exp = `description too long` ).
   ENDMETHOD.
 
 ENDCLASS.

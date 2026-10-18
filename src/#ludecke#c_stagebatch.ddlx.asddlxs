@@ -1,6 +1,6 @@
 @Metadata.layer: #CORE
 @UI.headerInfo: { typeName: 'Staging Batch', typeNamePlural: 'Staging Batches',
-                  title: { type: #STANDARD, value: 'ProjectId' },
+                  title: { type: #STANDARD, value: 'Description' },
                   description: { type: #STANDARD, value: 'CreatedAt' } }
 annotate entity /LUDECKE/C_StageBatch with
 {
@@ -11,6 +11,9 @@ annotate entity /LUDECKE/C_StageBatch with
   @UI: { lineItem: [ { position: 10 } ], selectionField: [ { position: 10 } ] }
   @EndUserText.label: 'ITM Project'
   ProjectId;
+  @UI: { lineItem: [ { position: 5 } ], selectionField: [ { position: 5 } ] }
+  @EndUserText.label: 'Description'
+  Description;
   @UI.lineItem: [ { position: 20 } ]
   CreatedAt;
   @UI.lineItem: [ { position: 30 } ]

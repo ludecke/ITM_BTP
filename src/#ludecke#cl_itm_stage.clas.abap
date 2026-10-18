@@ -19,8 +19,9 @@ CLASS /ludecke/cl_itm_stage DEFINITION
     TYPES ty_lines TYPE STANDARD TABLE OF ty_line WITH DEFAULT KEY.
 
     TYPES: BEGIN OF ty_request,
-             project_id TYPE string,
-             lines      TYPE ty_lines,
+             project_id  TYPE string,
+             description TYPE string,
+             lines       TYPE ty_lines,
            END OF ty_request.
 
     TYPES: BEGIN OF ty_response,
@@ -46,6 +47,7 @@ CLASS /ludecke/cl_itm_stage DEFINITION
     METHODS validate
       IMPORTING
         lines         TYPE ty_lines
+        description   TYPE string OPTIONAL
       RETURNING
         VALUE(result) TYPE string .
 
@@ -79,14 +81,14 @@ CLASS /ludecke/cl_itm_stage IMPLEMENTATION.
           CHANGING
             data        = wa_request ).
       CATCH cx_root.
-        send_error( response = response code = 400 reason = 'Bad Request'   "#EC NOTEXT
-                    text = 'invalid json' ).                                "#EC NOTEXT
+        send_error( response = response code = 400 reason = 'Bad Request' "#EC NOTEXT
+                    text = 'invalid json' ).                "#EC NOTEXT
         RETURN.
     ENDTRY.
 
-    DATA(lv_error) = validate( wa_request-lines ).
+    DATA(lv_error) = validate( lines = wa_request-lines description = wa_request-description ).
     IF lv_error IS NOT INITIAL.
-      send_error( response = response code = 400 reason = 'Bad Request'     "#EC NOTEXT
+      send_error( response = response code = 400 reason = 'Bad Request' "#EC NOTEXT
                   text = lv_error ).
       RETURN.
     ENDIF.
@@ -107,11 +109,12 @@ CLASS /ludecke/cl_itm_stage IMPLEMENTATION.
           WHERE NOT EXISTS ( SELECT group_id FROM /ludecke/stage_o
                                WHERE stage_id = /ludecke/stage_h~stage_id ).
         INSERT /ludecke/stage_h FROM @( VALUE #(
-          stage_id              = lv_stage_id
-          project_id            = wa_request-project_id
-          created_by            = lv_user
-          created_at            = lv_now
-          local_last_changed_at = lv_now ) ).
+  stage_id              = lv_stage_id
+  project_id            = wa_request-project_id
+  description           = wa_request-description
+  created_by            = lv_user
+  created_at            = lv_now
+  local_last_changed_at = lv_now ) ).
         INSERT /ludecke/stage_o FROM TABLE @i_groups.
         INSERT /ludecke/stage_i FROM TABLE @i_lines.
         COMMIT WORK.
@@ -123,14 +126,14 @@ CLASS /ludecke/cl_itm_stage IMPLEMENTATION.
     ENDTRY.
 
     DATA(lv_json) = /ui2/cl_json=>serialize(
-      data        = VALUE ty_response( status   = 'OK'                     "#EC NOTEXT
+      data        = VALUE ty_response( status   = 'OK'      "#EC NOTEXT
                                        stage_id = lv_stage_id
                                        groups   = lines( i_groups )
                                        lines    = lines( i_lines ) )
       pretty_name = /ui2/cl_json=>pretty_mode-low_case ).
 
-    response->set_status( i_code = 200 i_reason = 'OK' ).                  "#EC NOTEXT
-    response->set_content_type( 'application/json' ).                      "#EC NOTEXT
+    response->set_status( i_code = 200 i_reason = 'OK' ).   "#EC NOTEXT
+    response->set_content_type( 'application/json' ).       "#EC NOTEXT
     response->set_text( lv_json ).
 
   ENDMETHOD.
@@ -177,8 +180,13 @@ CLASS /ludecke/cl_itm_stage IMPLEMENTATION.
 
   METHOD validate.
 
+    IF strlen( description ) > 80.
+      result = 'description too long'.                      "#EC NOTEXT
+      RETURN.
+    ENDIF.
+
     IF lines IS INITIAL.
-      result = 'no lines'.                                                  "#EC NOTEXT
+      result = 'no lines'.                                  "#EC NOTEXT
       RETURN.
     ENDIF.
 
@@ -190,7 +198,7 @@ CLASS /ludecke/cl_itm_stage IMPLEMENTATION.
          OR wa_line-textkey IS INITIAL OR strlen( wa_line-textkey ) > 255
          OR strlen( wa_line-source_text ) > 255
          OR strlen( wa_line-target_text ) > 255.
-        result = |invalid line { lv_index }|.                               "#EC NOTEXT
+        result = |invalid line { lv_index }|.               "#EC NOTEXT
         RETURN.
       ENDIF.
     ENDLOOP.
@@ -201,11 +209,11 @@ CLASS /ludecke/cl_itm_stage IMPLEMENTATION.
   METHOD send_error.
 
     DATA(lv_json) = /ui2/cl_json=>serialize(
-      data        = VALUE ty_response( status = 'ERROR' message = text )   "#EC NOTEXT
+      data        = VALUE ty_response( status = 'ERROR' message = text ) "#EC NOTEXT
       pretty_name = /ui2/cl_json=>pretty_mode-low_case ).
 
     response->set_status( i_code = code i_reason = reason ).
-    response->set_content_type( 'application/json' ).                      "#EC NOTEXT
+    response->set_content_type( 'application/json' ).       "#EC NOTEXT
     response->set_text( lv_json ).
 
   ENDMETHOD.

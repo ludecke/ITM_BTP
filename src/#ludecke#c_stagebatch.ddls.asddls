@@ -7,6 +7,7 @@ define root view entity /LUDECKE/C_StageBatch
 {
   key StageId,
       ProjectId,
+      Description,
       CreatedBy,
       CreatedAt,
       LocalLastChangedAt,

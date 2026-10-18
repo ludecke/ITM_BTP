@@ -7,6 +7,7 @@ define root view entity /LUDECKE/R_StageBatch
 {
   key stage_id              as StageId,
       project_id            as ProjectId,
+      description           as Description,
       @Semantics.user.createdBy: true
       created_by            as CreatedBy,
       @Semantics.systemDateTime.createdAt: true
