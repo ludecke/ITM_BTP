@@ -1,0 +1,31 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'ITM staging batch counts'
+define view entity /LUDECKE/R_StageBatchCnt
+  as select from /ludecke/stage_o
+{
+  key stage_id                                             as StageId,
+      sum( case when status = 'N' then 1 else 0 end )      as OpenCount,
+      sum( case when status = 'Q' then 1 else 0 end )      as QueuedCount,
+      sum( case when status = 'E' then 1 else 0 end )      as ErrorCount
+}
+group by
+  stage_id
+/*+[internal] {
+"BASEINFO":
+{
+"FROM":
+[
+"/LUDECKE/STAGE_O"
+],
+"ASSOCIATED":
+[],
+"BASE":
+[],
+"ANNO_REF":
+[],
+"SCALAR_FUNCTION":
+[],
+"VERSION":0,
+"ANNOREF_EVALUATION_ERROR":""
+}
+}*/

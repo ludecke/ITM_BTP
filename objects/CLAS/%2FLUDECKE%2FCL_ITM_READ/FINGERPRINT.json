@@ -1,0 +1,58 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC /LUDECKE/CL_ITM_READ==========CCAU.abap",
+   "fingerprint":"2KDCNIMYvxzWo6jZCE0LJo8ppWgzVx9o4ftdrCyBRpTeR0sCG1Y70tYmp0MMGpWVKLNje+HJrrF10EZGvOZQGw=="
+  },
+  {
+   "name":"CINC /LUDECKE/CL_ITM_READ==========CCDEF.abap",
+   "fingerprint":"an5v6sIChojDnbel+3bUUXNkQMfwlXzFzzbEemf0NdUV3rX/c//Y85aLSlWaTEuat59MeBhO29KD+INmOckSMA=="
+  },
+  {
+   "name":"CINC /LUDECKE/CL_ITM_READ==========CCIMP.abap",
+   "fingerprint":"C/+Y2lYYXT+3AjMKeMXHlbFk9M5Z3PyPu1rp8HMrTq7ygxhur6fU1ASOzZMM9+Rz7FYn6eLRUaXMXQfBj7/+UQ=="
+  },
+  {
+   "name":"CINC /LUDECKE/CL_ITM_READ==========CCMAC.abap",
+   "fingerprint":"0RFiSWcLvNuYoZUy5AJmypSRcNSY28FWzIOgbqvHsOuB3otbv/4QyN/pqmXbQLGzKGig4iSZfP+ipXMu3ARfnQ=="
+  },
+  {
+   "name":"CLAS /LUDECKE/CL_ITM_READ.asx.json",
+   "fingerprint":"1vMU845G7kT6srL4YSKsXbPy4LTshztGLY3+Mpfe7tJy+vjT2ERXtqeMq8Akw9hlxHVCZrOXk8hDDBKn4yLo1g=="
+  },
+  {
+   "name":"CLSD /LUDECKE/CL_ITM_READ.abap",
+   "fingerprint":"y8RYQg4HYiiGaOcrmLjDb0Tu5MHnXmfIcxExlKmz/s2p6CZULgCNHSb1gwP+zIu4O/sk4KL2GzZnwBfp725mXw=="
+  },
+  {
+   "name":"CPRI /LUDECKE/CL_ITM_READ.abap",
+   "fingerprint":"21mygjv5lkBh1097CcC/8EuXxa6fiOAon7LNtG4yfwW0p7INGoYqhx6wnvR+TflX3cbge2aUdj2/YosIkeVfPg=="
+  },
+  {
+   "name":"CPRO /LUDECKE/CL_ITM_READ.abap",
+   "fingerprint":"2jSwGWtPpj6rEtIzZY51FEZp0vEmgMQtwcGqIi2EnNWzHI6CR7RgjGXnWOAUQtMbHCYP1eH9N7b/dI1qNv3Esw=="
+  },
+  {
+   "name":"CPUB /LUDECKE/CL_ITM_READ.abap",
+   "fingerprint":"PW3TwiKV/IsGRNhhWZ8IxZWjDD94Ufes0zH25c45RErx8/ofkEAxRTmjwB9d/clTF78T3nC9J+Ghm6T0vpiYxQ=="
+  },
+  {
+   "name":"METH IF_HTTP_SERVICE_EXTENSION~HANDLE_REQUEST.abap",
+   "fingerprint":"VuXixbqr+m9oRzvTwekrSCxCbnopGZHRxy04yLOSmqpOWpOti08+ct832fegfFuOu7UgA6wqqo//Dusbv+yLyQ=="
+  },
+  {
+   "name":"METH SEND_ERROR.abap",
+   "fingerprint":"vy1iaIF62JvWJW2Rmrp7rnRy9AjsDJs7/rOLFh3KEvPqxv8/W9yk7N9i0mkNT77ixihv3zQ2rqeMjfapoPJ1RA=="
+  },
+  {
+   "name":"REPS /LUDECKE/CL_ITM_READ==========CT.abap",
+   "fingerprint":"bogttzlhcz/36a+lQooETLNdS9mre9ic+bNu7Y7oZGCO1KVbxP8kN7wuLWd49frQmRPqSkeefIAzvmYD170b8A=="
+  },
+  {
+   "name":"REPT /LUDECKE/CL_ITM_READ==========CP.asx.json",
+   "fingerprint":"Ie6uQ/RrRMPSI7awgOJrlspRYb4PQo0whxVaSEp7z6R/mzIl+O8K+8XcmGe0VVlzZooSq8muKiToU+xGaj2HCg=="
+  }
+ ],
+ "fingerprintAll":"PwxqLBhil6tVS55JWsAsv+S9FrZ4J1fIXUaWLpfACBS4r6QNR68qm+RQhZ1PbY5BMh4Whhdrn3faD5WFc4+xsA=="
+}

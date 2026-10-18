@@ -1,0 +1,15 @@
+[
+ {
+  "table":"TEXTPOOLT",
+  "data":
+  [
+   {
+    "ID":"I",
+    "KEY":"001",
+    "LANG":"E",
+    "ENTRY":"Enter a transport request",
+    "LENGTH":60
+   }
+  ]
+ }
+]

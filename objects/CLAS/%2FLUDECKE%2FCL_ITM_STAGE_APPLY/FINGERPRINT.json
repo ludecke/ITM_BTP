@@ -1,0 +1,58 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC /LUDECKE/CL_ITM_STAGE_APPLY===CCAU.abap",
+   "fingerprint":"+QAUO68d93xIGlJuRf14sQz9+nGjzDW/26k32yG4qS26BZEiwD9jXBzcL2/5i2spTaKc/5ng+Pw4b5pBwuPzpQ=="
+  },
+  {
+   "name":"CINC /LUDECKE/CL_ITM_STAGE_APPLY===CCDEF.abap",
+   "fingerprint":"ErDMMEE3zWLY/LAFmuY/ym70kLyI8RhdnsgoZ5ZL2/QBrsIg/iYcysaWAaDfqo75ZdNe6rslkxxkAnTTEmzFNA=="
+  },
+  {
+   "name":"CINC /LUDECKE/CL_ITM_STAGE_APPLY===CCIMP.abap",
+   "fingerprint":"5qVzaZedi3La5bgvnv5HjzQntZbXqIhBradhP84QU3WdBhzUWtaBFFh9cWuSQlhtLYekvqYBf3+y7M+5PjQIGA=="
+  },
+  {
+   "name":"CINC /LUDECKE/CL_ITM_STAGE_APPLY===CCMAC.abap",
+   "fingerprint":"4aJ7MX5epsjlQtP/4WIu0jN9cAeM0PNEpNtvih5fA9v0ERjvZJCPz9KUIE5kgji4+nJFKAUndtUNKdU/WDQkIw=="
+  },
+  {
+   "name":"CLAS /LUDECKE/CL_ITM_STAGE_APPLY.asx.json",
+   "fingerprint":"R8DVDRTB+TJl0fej7B4XB2vSHB8Z7oUTP1AIfpJphBnXSerSSqTqY4WhMhSlt6Od1WBmnOcAfPfvPnDeftZ+4Q=="
+  },
+  {
+   "name":"CLSD /LUDECKE/CL_ITM_STAGE_APPLY.abap",
+   "fingerprint":"PjsnZsWsnTp0rb3gj/F6A026mOy6du4rrh1sti8kgOjt+nie7+awVOsAcmFYbgN5qRqQjeYrTkQkIzkdCI6U4A=="
+  },
+  {
+   "name":"CPRI /LUDECKE/CL_ITM_STAGE_APPLY.abap",
+   "fingerprint":"X1NKxE8l/+utbavd8W6PZtOg2afpuSdejfJLtPRHc2RW1/5l8viTe5cLSbLrH1FGXW6t9lZ4VhA/cczpnUN79A=="
+  },
+  {
+   "name":"CPRO /LUDECKE/CL_ITM_STAGE_APPLY.abap",
+   "fingerprint":"vxW8LaX43yM5AiiSdDNKvBYst8Y2oDUljKNHiICTZ15A0k6YNUNMdvLxVcjgkciA9bWUNpwyB6j5yB6tWPH/NQ=="
+  },
+  {
+   "name":"CPUB /LUDECKE/CL_ITM_STAGE_APPLY.abap",
+   "fingerprint":"w1/RvArijIYdVB+cV3eABllLV3he0Cm5H7Xbe8nOc2hB44Om4HBrvgM5mJbRHo3JU7Yaisheal6lUt+SCPd/uA=="
+  },
+  {
+   "name":"METH CONSTRUCTOR.abap",
+   "fingerprint":"meEXwbKX6rL1ORcd3qqEHofQ+c3fleS520ZXIKg1fGCLTVuj4BYV+gedGQ+8PIA/n/T+3GttO30YbkrMoKmM1g=="
+  },
+  {
+   "name":"METH GET_I18N.abap",
+   "fingerprint":"cTFT0gEG8fGUCsZOn/gIS0PwOv44lTQzWAZlEucio12Ku57abbbCUSY3J3u48lLOQj3DW8xnCf7sS6470cCqhA=="
+  },
+  {
+   "name":"METH IF_BGMC_OP_SINGLE_TX_UNCONTR~EXECUTE.abap",
+   "fingerprint":"NB7ozVhNbE7op7gSmRR9bk2Dlnhi2ndTO06B7ZeslXzhwNGN/lgLSk+y5gfFEoGEDkpmazNa2p7sSRBf+qvqAw=="
+  },
+  {
+   "name":"REPS /LUDECKE/CL_ITM_STAGE_APPLY===CT.abap",
+   "fingerprint":"gJ1r13S5xS48ctH7QgPBB59jQJtwWGrutn9XtbEMkSORIWs5lREWeQbEVsl7yzgWjbX3ki9TTBNGOPBhlU6+uw=="
+  }
+ ],
+ "fingerprintAll":"ohyeA+LrzQRCWi+wnImcGjhWCjreqx0ctcbXmDQwjpPVTbJOrhok1CKai7WT8P7by2Cxrp1Ued3RuKTiVxla/g=="
+}

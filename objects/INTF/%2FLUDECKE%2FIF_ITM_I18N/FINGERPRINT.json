@@ -1,0 +1,22 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"INTF /LUDECKE/IF_ITM_I18N.asx.json",
+   "fingerprint":"u0xLd6QXFfYkWEJnVbfoiyRH06XdxHDAvwe0VlMq7EP0Mspelzpxrw4sWi1+xxgQqxN/BuqEFTAEDbXLtQgX0Q=="
+  },
+  {
+   "name":"REPS /LUDECKE/IF_ITM_I18N==========IP.abap",
+   "fingerprint":"TrNDJweauiIw13dG4gZp7xILR80vWcOQdc0R7uzvczWPe7YpV8B2AqKtaTgWiAbdCKGvs1JVTJ5k3tQVPTO0xA=="
+  },
+  {
+   "name":"REPS /LUDECKE/IF_ITM_I18N==========IT.abap",
+   "fingerprint":"xlUhchJCPurlhKXcrNhPOOrtmmXQUaWbRB7RB1IUZCRsorguOOOMySI+yJHxzJnvE+HPFfPo6SJqFII9BZGc3g=="
+  },
+  {
+   "name":"REPS /LUDECKE/IF_ITM_I18N==========IU.abap",
+   "fingerprint":"vzaFfh0PW4hWoD4QZAEMuH6MB6Uc2+JpAMHafe+KgJ41w7Wx6MSpxScLl72caaHKaqucPbrlqITyItUdfypMJw=="
+  }
+ ],
+ "fingerprintAll":"KaSpAKSTC+Hvauvy9lYqnCZ7dhS4gxQP1yP+YxTEB14bGhGYrIHpwhROmR3AKtN9F5J7pBFT5NyuUNudVwiPXQ=="
+}

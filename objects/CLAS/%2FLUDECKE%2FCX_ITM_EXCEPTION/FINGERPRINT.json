@@ -1,0 +1,50 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC /LUDECKE/CX_ITM_EXCEPTION=====CCAU.abap",
+   "fingerprint":"KFGRkEdZKokoC1cdIB7WC/NPPn5h4ZoAzHtpAIK2zSn/SFOsRcfL7Yst/Eou+D+GnlEAHcqmZPof6vHeIkhlCQ=="
+  },
+  {
+   "name":"CINC /LUDECKE/CX_ITM_EXCEPTION=====CCDEF.abap",
+   "fingerprint":"Onn6g5KK+FqqG63jhTVZ8cseWUxRBxBzzbfEXrbpnvExzKMvKNhiTgU1lT6D1Qfx6qn/ENjiZrBR7Rhw6bva9A=="
+  },
+  {
+   "name":"CINC /LUDECKE/CX_ITM_EXCEPTION=====CCIMP.abap",
+   "fingerprint":"OGvtsJP7owhRVscl/FCluR0h7r+OpkeOo8RSFxQQu9f19Ayjtq9+4rwKGU6JIlg+C7HBpNQ9wmibjr5JD79cQw=="
+  },
+  {
+   "name":"CINC /LUDECKE/CX_ITM_EXCEPTION=====CCMAC.abap",
+   "fingerprint":"vGSOqowXOWwpdrRIin66QCfF1ncyuVtLZrm3A61w7bsOvik4WZmZTrz5/iGj1bN+UAaU/e2N1MtzgtJr2Pdefg=="
+  },
+  {
+   "name":"CLAS /LUDECKE/CX_ITM_EXCEPTION.asx.json",
+   "fingerprint":"qIOWnwbmxNYmzO7hjiv3uE0Ru2Q12i7pJ087kNLIT9wNa8QoGgmLlaF8ZbJ9d/UKOL4FzbBUR66uVt1/V3MGcA=="
+  },
+  {
+   "name":"CLSD /LUDECKE/CX_ITM_EXCEPTION.abap",
+   "fingerprint":"ydb3FeRSB/3qUP2dP/bsP7nTZc281/1lGY6xQERayogLJinLEQa+g1n1ONilxtEiyjBHJmXFfJ92nMFmca6HRA=="
+  },
+  {
+   "name":"CPRI /LUDECKE/CX_ITM_EXCEPTION.abap",
+   "fingerprint":"lCi52bjlWz03ARo/wquLeQtIgVUlYnxtS/Kl9uW9MMtMM6Moc8NvTd8YLgcNqiHClOvTCpz0piBhgAWmpfEpWQ=="
+  },
+  {
+   "name":"CPRO /LUDECKE/CX_ITM_EXCEPTION.abap",
+   "fingerprint":"zxYlMShdqzYbSbYm8BAZI8CiLCf6igXbUarNq9udXoWJHOth11ljtmYCGY7wtf9sEsNhAg10rVLAZRz5jgB67w=="
+  },
+  {
+   "name":"CPUB /LUDECKE/CX_ITM_EXCEPTION.abap",
+   "fingerprint":"G3a4iBpdu1IixpF9velYmN924xL3ifeNWD6aF7nuOExKtQpg3IsF32G+mV0NopqRCzJtkAqDXlAdmgbAoX1FYg=="
+  },
+  {
+   "name":"METH CONSTRUCTOR.abap",
+   "fingerprint":"fhilEg3gGDwmaTGop6wEYWWCXxjcssKxFDJK997hqQ5qMmDQFtQGPan4RNWYL8EMD90YXlbwTv3u/LjWJdtanw=="
+  },
+  {
+   "name":"REPS /LUDECKE/CX_ITM_EXCEPTION=====CT.abap",
+   "fingerprint":"itZEc1tzixEQIhPXFio5RvGCnryhbtV0/oez9lCqt4NTA0ye0ZQsBSjvU6FbbI2klDBrSU0XiC8MM4YOLRV0Yg=="
+  }
+ ],
+ "fingerprintAll":"VbPnOQiczM4aqvfaz9QDoWWkGYT3d8zjI/l1CNRsU3RW9P51JtqSEhk5FzlSS2Yj62wvaS/slPNd88YuYZ03Iw=="
+}

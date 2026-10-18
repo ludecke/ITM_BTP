@@ -1,0 +1,42 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'ITM staging text line'
+@Metadata.allowExtensions: true
+define view entity /LUDECKE/C_StageLine
+  as projection on /LUDECKE/R_StageLine
+{
+  key LineId,
+      GroupId,
+      StageId,
+      LineNumber,
+      Textkey,
+      SourceText,
+      TargetText,
+      _Group : redirected to parent /LUDECKE/C_StageGroup,
+      _Batch : redirected to /LUDECKE/C_StageBatch
+}
+/*+[internal] {
+"BASEINFO":
+{
+"FROM":
+[
+"/LUDECKE/R_STAGELINE"
+],
+"ASSOCIATED":
+[
+"/LUDECKE/C_STAGEBATCH",
+"/LUDECKE/C_STAGEGROUP",
+"/LUDECKE/R_STAGEBATCH",
+"/LUDECKE/R_STAGEGROUP"
+],
+"BASE":
+[
+"/LUDECKE/R_STAGELINE"
+],
+"ANNO_REF":
+[],
+"SCALAR_FUNCTION":
+[],
+"VERSION":0,
+"ANNOREF_EVALUATION_ERROR":""
+}
+}*/

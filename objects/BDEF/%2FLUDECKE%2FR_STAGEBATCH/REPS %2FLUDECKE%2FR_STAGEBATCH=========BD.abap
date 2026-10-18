@@ -1,0 +1,78 @@
+managed implementation in class /ludecke/bp_r_stagebatch unique;
+strict ( 2 );
+
+define behavior for /LUDECKE/R_StageBatch alias Batch
+persistent table /ludecke/stage_h
+with additional save
+lock master
+authorization master ( global )
+etag master LocalLastChangedAt
+{
+  field ( readonly, numbering : managed ) StageId;
+  delete;
+  association _Group;
+
+  mapping for /ludecke/stage_h
+    {
+      StageId            = stage_id;
+      ProjectId          = project_id;
+      CreatedBy          = created_by;
+      CreatedAt          = created_at;
+      LocalLastChangedAt = local_last_changed_at;
+    }
+}
+
+define behavior for /LUDECKE/R_StageGroup alias Group
+persistent table /ludecke/stage_o
+with additional save
+lock dependent by _Batch
+authorization master ( global )
+etag master LocalLastChangedAt
+{
+  internal update;
+  field ( readonly, numbering : managed ) GroupId;
+  field ( readonly ) StageId;
+  field ( suppress ) StatusCriticality;
+  delete;
+  action ( features : instance ) apply parameter /LUDECKE/A_StageApply result [1] $self;
+  association _Batch;
+  association _Line;
+
+  mapping for /ludecke/stage_o
+    {
+      GroupId            = group_id;
+      StageId            = stage_id;
+      ObjectType         = object_type;
+      ObjectName         = object_name;
+      TargLang           = targ_lang;
+      Status             = status;
+      TransportRequest   = transport_request;
+      Message            = message;
+      AppliedBy          = applied_by;
+      AppliedAt          = applied_at;
+      LocalLastChangedAt = local_last_changed_at;
+    }
+}
+
+define behavior for /LUDECKE/R_StageLine alias Line
+persistent table /ludecke/stage_i
+lock dependent by _Batch
+authorization dependent by _Group
+etag dependent by _Group
+{
+  field ( readonly, numbering : managed ) LineId;
+  field ( readonly ) GroupId, StageId;
+  association _Group;
+  association _Batch;
+
+  mapping for /ludecke/stage_i
+    {
+      LineId     = line_id;
+      GroupId    = group_id;
+      StageId    = stage_id;
+      LineNumber = line_no;
+      Textkey    = textkey;
+      SourceText = source_text;
+      TargetText = target_text;
+    }
+}

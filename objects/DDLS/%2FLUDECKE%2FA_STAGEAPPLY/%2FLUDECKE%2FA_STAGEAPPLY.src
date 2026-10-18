@@ -1,0 +1,23 @@
+@EndUserText.label: 'ITM staging apply parameter'
+define abstract entity /LUDECKE/A_StageApply
+{
+  @EndUserText.label: 'Transport Request'
+  TransportRequest : abap.char(20);
+}
+/*+[internal] {
+"BASEINFO":
+{
+"FROM":
+[],
+"ASSOCIATED":
+[],
+"BASE":
+[],
+"ANNO_REF":
+[],
+"SCALAR_FUNCTION":
+[],
+"VERSION":0,
+"ANNOREF_EVALUATION_ERROR":""
+}
+}*/

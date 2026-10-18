@@ -1,0 +1,50 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC /LUDECKE/BP_R_STAGEBATCH======CCAU.abap",
+   "fingerprint":"gPdqRt2b9ayGCqdgtBOb0+LNbDxVejvLVAvC/HQbyTMQeb4Ntxbc216RHtPnyu1pl40TPnHgrusizWpDfuJVYA=="
+  },
+  {
+   "name":"CINC /LUDECKE/BP_R_STAGEBATCH======CCDEF.abap",
+   "fingerprint":"uZZGzxIMLTZ+QVnw/5MabXfDAr+9JjHCrLVRjXAjfH4ArCvrLIuHTu7xyQC4W1CQ3KwFkIsoY93JxCvs08xc/g=="
+  },
+  {
+   "name":"CINC /LUDECKE/BP_R_STAGEBATCH======CCIMP.abap",
+   "fingerprint":"ESqr1sqKgwwt1BXV0Sq94MZHL5A7xPwu6wuHZD7etfBJJpbeyJLo4etWDt2vbMQWqPqy4eJ/OHZ9h4vh2Yt0Xw=="
+  },
+  {
+   "name":"CINC /LUDECKE/BP_R_STAGEBATCH======CCMAC.abap",
+   "fingerprint":"d86ekA0jLpt2xt9Pu4PnBTibOmMCPQgHZSy6CW7WL8XrViE7dnezqnaTrMAWNa+527OldV4Y4NbJS4UvGvELYg=="
+  },
+  {
+   "name":"CLAS /LUDECKE/BP_R_STAGEBATCH.asx.json",
+   "fingerprint":"XVx6tu+IXA0kqp3MRIQ756jO8ECt/sgCyGSh+aE40zGAkQr4hca+bJ9ukYnJzdG8ZRR3J8eO8TBGSx2A3Cavxg=="
+  },
+  {
+   "name":"CLSD /LUDECKE/BP_R_STAGEBATCH.abap",
+   "fingerprint":"mY1uZwkb6zMA4f6TkOJaA9SBwA7QQRfQWLA1FF2f8gPe5HTVG4iXbZzL8RiIWP0U3LTzZtt34orB9wnLU1CiAg=="
+  },
+  {
+   "name":"CPRI /LUDECKE/BP_R_STAGEBATCH.abap",
+   "fingerprint":"OKDOqAjqGIUa1AAJVCeM/KeN97lCzF8Ni4LxF/uCfXv0taffXy/iain6XCPSNQNM0/nV0RfcJ1DHqBMZMTz/7Q=="
+  },
+  {
+   "name":"CPRO /LUDECKE/BP_R_STAGEBATCH.abap",
+   "fingerprint":"DhwtIi9sksjtkdWvFmLSLjIimQO9ZmxrKa1UGldsA9E2lPqjPk+jGD6kgtSVNeXJ8PWBqc8+TKngy2wJXzvovg=="
+  },
+  {
+   "name":"CPUB /LUDECKE/BP_R_STAGEBATCH.abap",
+   "fingerprint":"zxcEzd4idhcsASAYrfPm3sbcsc9qEZ7V9bCeU0GWmtXfO6CFtb4V5OZXtRpqG0BtqM6LZUDRKxmZWBDdoioaww=="
+  },
+  {
+   "name":"REPS /LUDECKE/BP_R_STAGEBATCH======CT.abap",
+   "fingerprint":"8GXzbT1ns/ih1OcC3OH2bAff6ZwrBhcpd9W+jHQOdpmtwS5BJ8HuxwQNr2MSA8wJ4hhnctQCwepq+eCNQKu1Iw=="
+  },
+  {
+   "name":"REPT /LUDECKE/BP_R_STAGEBATCH======CP.asx.json",
+   "fingerprint":"QmxNMwsOPYnEnWMDIbRQJstyx34Ai/NnzT/Xts7gGAHkRk7V/GEORnCoBeHADZ/liFht+zh9rPIGeWKJO4b4Vw=="
+  }
+ ],
+ "fingerprintAll":"wYAzYcfSK1vuBo6KyOA6ovkUY0oOB3dcoqqZx4w5rghhX+Svthbw3tzdBnwgU2x4kUYZgEFw6eG0krDriXLDCg=="
+}

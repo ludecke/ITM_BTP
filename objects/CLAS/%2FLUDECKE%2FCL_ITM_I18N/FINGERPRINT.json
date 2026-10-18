@@ -1,0 +1,74 @@
+{
+ "fingerprints":
+ [
+  {
+   "name":"CINC /LUDECKE/CL_ITM_I18N==========CCAU.abap",
+   "fingerprint":"SvF7U2EznPXefXTU4MncNoOzTEjmr4gDXetFIJw0juaTzTN1TKva7Z5vcnDp4lPkX/9m9mGZO3t/5KKzhYxqQA=="
+  },
+  {
+   "name":"CINC /LUDECKE/CL_ITM_I18N==========CCDEF.abap",
+   "fingerprint":"jL4NiZmiXiMJQ8xQBA5rNrCIzMLX6nV5/PIwO+7Cw1I8/7U1nm3F81+I88b8IfZpckFfVkgEpyMUOTmjtC6BBA=="
+  },
+  {
+   "name":"CINC /LUDECKE/CL_ITM_I18N==========CCIMP.abap",
+   "fingerprint":"FfLYkVOaM9+uMyuoDQAaD6LVTcGGBG7r5xK5ETvOBOAirZ5Dq7cq2vZkCdaE0835yMrR/WP+oIu/0iPDRzo6rw=="
+  },
+  {
+   "name":"CINC /LUDECKE/CL_ITM_I18N==========CCMAC.abap",
+   "fingerprint":"/4d4EwRdkVEgfCEOhHLSIwwIPBgCLK2UF1ZddOpmXrZz3x6himtvFUw80Dla7mB4bMzgkVDziSldSxvtTaiGXg=="
+  },
+  {
+   "name":"CLAS /LUDECKE/CL_ITM_I18N.asx.json",
+   "fingerprint":"gifUYtceS8rB362fLvDxwZ+rpLsfBzEfMlOoJ/pVsxWR9jWtKMj1L8634IEV+UQBWNeBHZMCtoiQnBSatzFqwA=="
+  },
+  {
+   "name":"CLSD /LUDECKE/CL_ITM_I18N.abap",
+   "fingerprint":"BfJmB7P3oM9rzAWOYys8t+H2t0ubIxPMg3y4CzoalHILcxVHhIkRmyqTnTOfSJRfC8vTcAgy7smXfAdU052k6w=="
+  },
+  {
+   "name":"CPRI /LUDECKE/CL_ITM_I18N.abap",
+   "fingerprint":"qFHHzUleX4MM6P60gMVOvZK+tDXXXWrcaGXjeBQAcYObNUiWHYE4zy4doH5aiq6twJdufTNDMHqBrxuQHDYvXQ=="
+  },
+  {
+   "name":"CPRO /LUDECKE/CL_ITM_I18N.abap",
+   "fingerprint":"jRYddxYUsuM8G50eRZiFDhJHkYRt+je8iUqdQK/Hv2/SsZDkIdnXSHA8cKXD6Hacrj7KorsI68Ge7eIAr/tXRg=="
+  },
+  {
+   "name":"CPUB /LUDECKE/CL_ITM_I18N.abap",
+   "fingerprint":"nOwTrTaLeOLSwgS/2ukmE28936XmFuNtGbUbMS5xaZK3mYRhB4amlMe7r6mCiN64xfBwPlFh1pgIyv+7ZgudlA=="
+  },
+  {
+   "name":"METH /LUDECKE/IF_ITM_I18N~READ.abap",
+   "fingerprint":"AwWxuU0Y/M2ylb8urXDEyCy60dz5ZlW60LC4NgR6jVRPUKxuKpVqrDhpJ2M80hC4lUYnRmXr4SUrnhefepItGg=="
+  },
+  {
+   "name":"METH /LUDECKE/IF_ITM_I18N~WRITE.abap",
+   "fingerprint":"XQjBpoRUu4f89v54InON/mBE9gYtvPPBpyDDY4+QyW4SQM2mmB3ZUNAUUnN1Zs42S0Gh07+5aX6smJ2uhMraHw=="
+  },
+  {
+   "name":"METH ATTR_FOR_KEY.abap",
+   "fingerprint":"Di9w5LLVYYZQ5OXHtQHjO4OCnnr52VcNWEYqQmn7vkuTWAvLugQ24x74txKgv8NQwifzGjq1eynQbb0DmjiD7Q=="
+  },
+  {
+   "name":"METH CHAIN_TEXT.abap",
+   "fingerprint":"prWX5eZTGO9k/MrC/egpG/2nqneLSOAOWE9q3Qbe6yB1eZInn3dZvNZMaztD0DrRd9nozIuplGTEgJB1ScwUxA=="
+  },
+  {
+   "name":"METH GET_DTEL_ATTRIBUTES.abap",
+   "fingerprint":"yLJkQT6uJf8+EaveTADz6Ace6AfUcvLbE+pF1N5FdkY4NFtL9qRq4ufLYZ7iR0Z4IC1HqoEPOJa2ozgwI2aaCA=="
+  },
+  {
+   "name":"METH MAXLEN_FOR_KEY.abap",
+   "fingerprint":"Dnyz6Pj5ZAxVq9O/BFt2frlwQjKO5Pro6mgovCmTAkOWNTkFOceSxrLfN6wvJEkZKNXWDda5HX2KCakaHMzM7A=="
+  },
+  {
+   "name":"METH RAISE_EXC.abap",
+   "fingerprint":"D3M0OjkEdarSllh5HSeGuyKhnfYMgUJx0FAFP3tUDRCXOG0r7tJkyAxSCCwxhy0OxPR/FITcDtvqqauNUs1oHQ=="
+  },
+  {
+   "name":"REPS /LUDECKE/CL_ITM_I18N==========CT.abap",
+   "fingerprint":"S3zFdXS5/nUioGOUKZI0Fa329s2BPrXHMWVbbCVJicXRYUBaJgMVWiKoea+ab7mgOtKpzgNs3/P5/BYplxTXQg=="
+  }
+ ],
+ "fingerprintAll":"md5olt2rlikc8ruzLj9D2I+g6obh49E9MEUEkQJlSurU4dvCJGe7uhnyRjRa7/56cjdNQu4xWjzDYNOQ+jVzdQ=="
+}

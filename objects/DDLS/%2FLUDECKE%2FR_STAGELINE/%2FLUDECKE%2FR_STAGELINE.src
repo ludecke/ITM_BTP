@@ -1,0 +1,39 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'ITM staging text line'
+define view entity /LUDECKE/R_StageLine
+  as select from /ludecke/stage_i
+  association        to parent /LUDECKE/R_StageGroup as _Group on $projection.GroupId = _Group.GroupId
+  association [1..1] to /LUDECKE/R_StageBatch        as _Batch on $projection.StageId = _Batch.StageId
+{
+  key line_id     as LineId,
+      group_id    as GroupId,
+      stage_id    as StageId,
+      line_no     as LineNumber,
+      textkey     as Textkey,
+      source_text as SourceText,
+      target_text as TargetText,
+      _Group,
+      _Batch
+}
+/*+[internal] {
+"BASEINFO":
+{
+"FROM":
+[
+"/LUDECKE/STAGE_I"
+],
+"ASSOCIATED":
+[
+"/LUDECKE/R_STAGEBATCH",
+"/LUDECKE/R_STAGEGROUP"
+],
+"BASE":
+[],
+"ANNO_REF":
+[],
+"SCALAR_FUNCTION":
+[],
+"VERSION":0,
+"ANNOREF_EVALUATION_ERROR":""
+}
+}*/
