@@ -1,0 +1,46 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: { typeName: 'Object', typeNamePlural: 'Objects',
+                  title: { type: #STANDARD, value: 'ObjectName' },
+                  description: { type: #STANDARD, value: 'ObjectType' } }
+annotate entity /LUDECKE/C_StageGroup with
+{
+  @UI.facet: [ { id: 'General', purpose: #STANDARD, type: #IDENTIFICATION_REFERENCE,
+                 label: 'General', position: 10 },
+               { id: 'Lines', purpose: #STANDARD, type: #LINEITEM_REFERENCE,
+                 label: 'Texts', position: 20, targetElement: '_Line' } ]
+  @UI.hidden: true
+  GroupId;
+  @UI.hidden: true
+  StageId;
+  @UI: { lineItem: [ { position: 10 } ], identification: [ { position: 10 } ] }
+  @EndUserText.label: 'Object Type'
+  ObjectType;
+  @UI: { lineItem: [ { position: 20 } ], identification: [ { position: 20 } ] }
+  @EndUserText.label: 'Object Name'
+  ObjectName;
+  @UI: { lineItem: [ { position: 30 } ], identification: [ { position: 30 } ] }
+  @EndUserText.label: 'Target Language'
+  TargLang;
+  @UI: { lineItem: [ { position: 40, criticality: 'StatusCriticality' },
+                     { type: #FOR_ACTION, dataAction: 'apply', label: 'Apply' } ],
+         identification: [ { position: 40, criticality: 'StatusCriticality' },
+                           { type: #FOR_ACTION, dataAction: 'apply', label: 'Apply' } ] }
+  @EndUserText.label: 'Status'
+  Status;
+  @UI.hidden: true
+  StatusCriticality;
+  @UI: { lineItem: [ { position: 50 } ], identification: [ { position: 50 } ] }
+  @EndUserText.label: 'Transport'
+  TransportRequest;
+  @UI: { lineItem: [ { position: 60 } ], identification: [ { position: 60 } ] }
+  @EndUserText.label: 'Message'
+  Message;
+  @UI: { lineItem: [ { position: 70 } ], identification: [ { position: 70 } ] }
+  @EndUserText.label: 'Last Attempt By'
+  AppliedBy;
+  @UI: { lineItem: [ { position: 80 } ], identification: [ { position: 80 } ] }
+  @EndUserText.label: 'Last Attempt At'
+  AppliedAt;
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

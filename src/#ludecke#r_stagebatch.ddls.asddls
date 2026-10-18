@@ -1,0 +1,18 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'ITM staging batch'
+define root view entity /LUDECKE/R_StageBatch
+  as select from /ludecke/stage_h
+  composition [0..*] of /LUDECKE/R_StageGroup    as _Group
+  association [0..1] to /LUDECKE/R_StageBatchCnt as _Count on $projection.StageId = _Count.StageId
+{
+  key stage_id              as StageId,
+      project_id            as ProjectId,
+      @Semantics.user.createdBy: true
+      created_by            as CreatedBy,
+      @Semantics.systemDateTime.createdAt: true
+      created_at            as CreatedAt,
+      @Semantics.systemDateTime.localInstanceLastChangedAt: true
+      local_last_changed_at as LocalLastChangedAt,
+      _Group,
+      _Count
+}

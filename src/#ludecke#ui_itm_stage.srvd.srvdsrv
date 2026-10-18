@@ -1,0 +1,6 @@
+@EndUserText.label: 'ITM translation staging'
+define service /LUDECKE/UI_ITM_STAGE {
+  expose /LUDECKE/C_StageBatch as StageBatch;
+  expose /LUDECKE/C_StageGroup as StageGroup;
+  expose /LUDECKE/C_StageLine  as StageLine;
+}

@@ -1,0 +1,25 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'ITM staging object group'
+define view entity /LUDECKE/R_StageGroup
+  as select from /ludecke/stage_o
+  association to parent /LUDECKE/R_StageBatch as _Batch on $projection.StageId = _Batch.StageId
+  composition [0..*] of /LUDECKE/R_StageLine  as _Line
+{
+  key group_id               as GroupId,
+      stage_id               as StageId,
+      object_type            as ObjectType,
+      object_name            as ObjectName,
+      targ_lang              as TargLang,
+      status                 as Status,
+      case status when 'E' then 1
+                  when 'Q' then 2
+                  else 0 end as StatusCriticality,
+      transport_request      as TransportRequest,
+      message                as Message,
+      applied_by             as AppliedBy,
+      applied_at             as AppliedAt,
+      @Semantics.systemDateTime.localInstanceLastChangedAt: true
+      local_last_changed_at  as LocalLastChangedAt,
+      _Batch,
+      _Line
+}

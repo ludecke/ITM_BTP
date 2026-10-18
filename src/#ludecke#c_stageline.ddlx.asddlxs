@@ -1,0 +1,24 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: { typeName: 'Text', typeNamePlural: 'Texts',
+                  title: { type: #STANDARD, value: 'Textkey' } }
+annotate entity /LUDECKE/C_StageLine with
+{
+  @UI.hidden: true
+  LineId;
+  @UI.hidden: true
+  GroupId;
+  @UI.hidden: true
+  StageId;
+  @UI.lineItem: [ { position: 10 } ]
+  @EndUserText.label: 'No.'
+  LineNumber;
+  @UI.lineItem: [ { position: 20 } ]
+  @EndUserText.label: 'Text Key'
+  Textkey;
+  @UI.lineItem: [ { position: 30 } ]
+  @EndUserText.label: 'Source Text'
+  SourceText;
+  @UI.lineItem: [ { position: 40 } ]
+  @EndUserText.label: 'Target Text'
+  TargetText;
+}

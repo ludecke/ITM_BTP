@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>/LUDECKE/ITM</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>ITM</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LUDECKE/ITM</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Object type &amp;1 is not supported</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LUDECKE/ITM</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Write of &amp;1 &amp;2 failed: &amp;3</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LUDECKE/ITM</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>Unknown text key &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>/LUDECKE/ITM</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>Unknown or inactive language &amp;1</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>
